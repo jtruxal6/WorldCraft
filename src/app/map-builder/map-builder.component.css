@@ -1,0 +1,42 @@
+.mapMarker {
+    z-index: 1; 
+    position:absolute; 
+    width: 100px; 
+    height: 100px;
+}
+
+.mapMarker:hover {
+    background-color: green;
+}
+
+mat-sidenav {
+    background-color: rgba(179, 92, 92, 0.301);
+    min-width: 100px;
+    width: 7%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+mat-sidenav-container {
+    height: 100%;
+}
+
+.mapCanvas {
+    position: absolute;
+    z-index: 0;
+    background-color: rgb(54, 52, 52);
+}
+
+.gridScaleInput {
+    width: 70px;
+}
+
+.gridDescriptions {
+    font-weight: 550;
+    font-size: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+}
