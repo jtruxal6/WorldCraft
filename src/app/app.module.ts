@@ -10,7 +10,8 @@ import { MapBuilderComponent } from './map-builder/map-builder.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { MatFormFieldModule} from '@angular/material/form-field';
-import { MapViewerComponent } from './map-viewer/map-viewer.component'
+import { MapViewerComponent } from './map-viewer/map-viewer.component';
+import { SidenavContentComponent } from './map-builder/sidenav-content/sidenav-content.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MapViewerComponent } from './map-viewer/map-viewer.component'
     MapBuilderComponent,
     LoginComponent,
     HomeComponent,
-    MapViewerComponent
+    MapViewerComponent,
+    SidenavContentComponent
   ],
   imports: [
     BrowserModule,

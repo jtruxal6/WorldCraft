@@ -1,4 +1,4 @@
-import { Component, ɵCompiler_compileModuleSync__POST_R3__ } from '@angular/core';
+import { Component } from '@angular/core';
 import { ImageRefresh, Zoom } from '../TS/ImageDrawing';
 import { Map } from '../TS/Map';
 import { MapMarker } from '../TS/MapMarker';
@@ -32,11 +32,13 @@ export class MapBuilderComponent implements AfterViewInit {
       //adds to adjust for navbar coming out
       this.map.dynamicWidthAdjust += document.getElementById("sidenav")!.clientWidth;
       document.getElementById("navButton")!.innerText = ">";
+      ImageRefresh(this.myNewCanvas, this.map);
       this.navOut = false;
     } else {
       //subtracts for nav bar going in
       this.map.dynamicWidthAdjust -= document.getElementById("sidenav")!.clientWidth;
       document.getElementById("navButton")!.innerText = "<";
+      ImageRefresh(this.myNewCanvas, this.map);
       this.navOut = true;
     }
   }

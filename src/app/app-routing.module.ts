@@ -6,11 +6,11 @@ import { HomeComponent } from './home/home.component';
 import { MapViewerComponent } from './map-viewer/map-viewer.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'mapBuilder', component: MapBuilderComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'home', component: HomeComponent},
-  {path: 'maps', component: MapViewerComponent}
+  { path: '', component: HomeComponent },
+  { path: 'mapBuilder', component: MapBuilderComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'maps', component: MapViewerComponent }
 ];
 
 @NgModule({
